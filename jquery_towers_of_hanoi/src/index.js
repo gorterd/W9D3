@@ -1,4 +1,5 @@
 const HanoiGame = require('./game.js')
+import HanoiView from "./hanoi-view.js";
 
 $(() => {
   console.log("Working!");

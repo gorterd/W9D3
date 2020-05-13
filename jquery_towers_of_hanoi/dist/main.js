@@ -97,14 +97,27 @@ eval("class Game {\n  constructor() {\n    this.towers = [[3, 2, 1], [], []];\n 
 
 /***/ }),
 
+/***/ "./src/hanoi-view.js":
+/*!***************************!*\
+  !*** ./src/hanoi-view.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return HanoiView; });\nclass HanoiView {\n  constructor(game, $el) {\n    this.game = game;\n    this.$el = $el;\n    this.setupTowers();\n  }\n\n  setupTowers() {\n\n  }\n};\n\n\n\n//# sourceURL=webpack:///./src/hanoi-view.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const HanoiGame = __webpack_require__(/*! ./game.js */ \"./src/game.js\")\n\n$(() => {\n  console.log(\"Working!\");\n  const rootEl = $('.hanoi');\n  const game = new HanoiGame();\n  new HanoiView(game, rootEl);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hanoi_view_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hanoi-view.js */ \"./src/hanoi-view.js\");\nconst HanoiGame = __webpack_require__(/*! ./game.js */ \"./src/game.js\")\n\n\n$(() => {\n  console.log(\"Working!\");\n  const rootEl = $('.hanoi');\n  const game = new HanoiGame();\n  new _hanoi_view_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](game, rootEl);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
