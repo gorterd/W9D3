@@ -10,9 +10,7 @@ class View {
     $("li").on('click', e => {
       const $cell = $(e.currentTarget);
       this.makeMove($cell);
-      // debugger
       if (this.game.winner()){
-        // debugger
         alert(`Player ${this.game.winner()} Wins!!!`);
       }
     });
@@ -23,7 +21,6 @@ class View {
     let pos = $square.data("pos");
     if (this.game.board.isEmptyPos(pos)){
       this.game.playMove(pos);
-      // debugger
       $square.text(mark);
       $square.toggleClass("unclicked clicked");
     } else {
