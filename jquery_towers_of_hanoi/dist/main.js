@@ -105,7 +105,7 @@ eval("class Game {\n  constructor() {\n    this.towers = [[3, 2, 1], [], []];\n 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return HanoiView; });\nclass HanoiView {\n  constructor(game, $el) {\n    this.game = game;\n    this.$el = $el;\n    this.setupTowers();\n  }\n\n  setupTowers() {\n\n  }\n};\n\n\n\n//# sourceURL=webpack:///./src/hanoi-view.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return HanoiView; });\nclass HanoiView {\n  constructor(game, $el) {\n    this.game = game;\n    this.$el = $el;\n    this.setupTowers();\n  }\n\n  setupTowers() {\n    this.$el.append(\"<ul>\", \"<ul>\", \"<ul>\");\n    const $ul = $('ul'); \n    $ul.each( function() {\n      // debugger\n      $(this).append(\"<li>\", \"<li>\", \"<li>\");\n    });\n  }\n\n  render(){\n\n  }\n};\n\n\n\n//# sourceURL=webpack:///./src/hanoi-view.js?");
 
 /***/ }),
 

@@ -6,6 +6,15 @@ export default class HanoiView {
   }
 
   setupTowers() {
+    this.$el.append("<ul>", "<ul>", "<ul>");
+    const $ul = $('ul'); 
+    $ul.each( function() {
+      // debugger
+      $(this).append("<li>", "<li>", "<li>");
+    });
+  }
+
+  render(){
 
   }
 };
