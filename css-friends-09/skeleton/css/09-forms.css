@@ -1,1 +1,21 @@
 /* PHASE 9: Forms */
+
+.content-main {
+  display: flex;
+  background-color: red;
+}
+
+.content-main > form {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+
+  background-color: grey;
+}
+
+.submit {
+  background-color: green;
+}

@@ -1,6 +1,11 @@
-const View = // require appropriate file
-const Game = // require appropriate file
+
+
+const View = require('./ttt-view.js')// require appropriate file
+const Game = require("../tictactoe_node_solution/game.js");// require appropriate file
 
   $(() => {
-    // Your code here
+    $figure = $('.ttt');
+    const game = new Game();
+    const view = new View(game, $figure);
   });
+

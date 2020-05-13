@@ -1,0 +1,30 @@
+.ttt > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+ li {
+  font-size: 150px;
+  font-weight: 800;
+  font-family: sans-serif;
+  text-align: center; 
+  line-height: 1em;
+  display: block;
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  border: 20px solid black;
+}
+
+.unclicked {
+  background-color: gray;
+}
+
+.unclicked:hover {
+  background-color: yellow;
+}
+
+.clicked {
+  background-color: white;
+}
